@@ -2,30 +2,46 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdfdfd;
-  color: #333;
   line-height: 1.6;
+  color: #333;
+  background-color: #fff;
 }
 
 header {
-  background-color: #f4f4f9;
-  text-align: center;
+  background-color: #ffe3dc;
   padding: 2em 1em;
+  text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  color: #2f75bc;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 1em;
 }
 
-header nav a {
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav {
+  margin-top: 1em;
+}
+
+nav a {
   margin: 0 1em;
   text-decoration: none;
   color: #444;
   font-weight: 500;
 }
 
-header nav a:hover {
+nav a:hover {
   color: #2f75bc;
 }
 
@@ -42,15 +58,42 @@ section h2 {
 }
 
 ul {
-  list-style-type: disc;
   padding-left: 1.5em;
 }
 
 footer {
-  background-color: #f4f4f9;
+  background-color: #f4f4f4;
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
   color: #666;
   margin-top: 2em;
+}
+
+/* Barevné sekce */
+.light {
+  background-color: #fdfdfd;
+}
+
+.dark {
+  background-color: #1a2b3c;
+  color: white;
+}
+
+.coral {
+  background-color: #f07b66;
+  color: white;
+}
+
+.teal {
+  background-color: #3c9a9a;
+  color: white;
+}
+
+/* Odkazy v tmavém režimu */
+.dark a,
+.coral a,
+.teal a {
+  color: #ffffff;
+  text-decoration: underline;
 }
